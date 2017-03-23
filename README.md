@@ -7,8 +7,7 @@ Fully customisable.
 Demo
 ----
 To add
-![alt tag](Link goes here)
-![alt tag](Link goes here)
+![alt tag](https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal)
 
 Install
 -------
