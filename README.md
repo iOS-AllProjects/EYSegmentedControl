@@ -37,12 +37,18 @@ Drag a `UIView` into your storyboard! Change the class to `CustomSegmentedContro
 ```
 ##### In storyboard Edit the following properties! 
 
-### Background Color 
-### Corner Radius
-### Unselected Labels Color 
-### Selected Label Background Color
-### Selected Label Border Width
-### Selected Label Border Color 
+### For the UIView
+Background Color 
+Corner Radius
+
+### For all Labels
+Unselected Labels Color 
+Highlighted Label Color
+
+### For the Highlighted Label
+Selected Label Background Color
+Selected Label Border Width
+Selected Label Border Color 
 
 ##### Create an Outlet for the Control! 
 
