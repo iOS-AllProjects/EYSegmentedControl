@@ -7,7 +7,7 @@ Fully customisable.
 Demo
 ----
 To add
-![alt tag](https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal)
+![Demo](https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal.gif)
 <iframe src='https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal' frameborder='0' scrolling='no' width='640' height='1139' allowfullscreen></iframe>
 
 Install
