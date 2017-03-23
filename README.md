@@ -8,7 +8,7 @@ Demo
 ----
 To add
 ![Demo](https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal.gif)
-<a href="https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal"><img src="https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal"></a>
+<img src="https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal.gif">
 
 Install
 -------
