@@ -6,9 +6,7 @@ Fully customisable.
 
 Demo
 ----
-To add
-![Demo](https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal.gif)
-<img src="https://gfycat.com/ifr/UncomfortableObviousAustralianfurseal.gif">
+<a href="https://imgflip.com/gif/1lyqkg"><img src="https://i.imgflip.com/1lyqkg.gif" title="made at imgflip.com"/></a>
 
 Install
 -------
