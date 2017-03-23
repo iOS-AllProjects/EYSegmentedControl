@@ -35,14 +35,14 @@ Drag a `UIView` into your storyboard! Change the class to `CustomSegmentedContro
 ``` swift
   var items : [String] = ["Item1", "Item2"] 
 ```
-##### In storyboard Edit the following properties 
+##### In storyboard Edit the following properties! 
 
-#### Background Color 
-#### Corner Radius
-#### Unselected Labels Color 
-#### Selected Label Background Color
-#### Selected Label Border Width
-#### Selected Label Border Color 
+### Background Color 
+### Corner Radius
+### Unselected Labels Color 
+### Selected Label Background Color
+### Selected Label Border Width
+### Selected Label Border Color 
 
 ##### Create an Outlet for the Control! 
 
@@ -62,7 +62,7 @@ Drag a `UIView` into your storyboard! Change the class to `CustomSegmentedContro
 ### Add your Target 
 
 ``` swift
-        segmented.addTarget(self, action: #selector(ViewController.segmentedViewControllerValueChanged(_:)), for: .valueChanged)
+  segmented.addTarget(self, action: #selector(ViewController.segmentedViewControllerValueChanged(_:)), for: .valueChanged)
 ```
 
 And that is it.
