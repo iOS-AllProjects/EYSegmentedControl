@@ -29,27 +29,27 @@ Usage
 Drag a `UIView` into your storyboard! Change the class to `CustomSegmentedControl`. The view will be updated! 
 
 
-##### Edit / Add / Remove Labels according to preference!
+### Edit / Add / Remove Labels according to preference!
 
 ``` swift
   var items : [String] = ["Item1", "Item2"] 
 ```
-##### In storyboard Edit the following properties! 
+### In storyboard Edit the following properties! 
 
-### For the UIView
+##### For the UIView
 Background Color. 
 Corner Radius.
 
-### For all Labels
-Unselected Labels Color. 
+##### For all Labels
+Unselected Labels Color.
 Highlighted Label Color.
 
-### For the Highlighted Label
+##### For the Highlighted Label
 Selected Label Background Color.
 Selected Label Border Width.
 Selected Label Border Color. 
 
-##### Create an Outlet for the Control! 
+### Create an Outlet for the Control! 
 
 ``` swift
     @IBOutlet weak var segmented: CustomSegmentedControl! 
