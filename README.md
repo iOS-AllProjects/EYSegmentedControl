@@ -6,7 +6,7 @@ Fully customisable.
 
 Demo
 ----
-
+To add
 ![alt tag](Link goes here)
 ![alt tag](Link goes here)
 
@@ -20,8 +20,7 @@ Copy & paste `CustomSegmentedControl.swift` in your project
 ##### CocoaPods
 
 ``` ruby
-use_frameworks!
-pod 'EYSegmentedControl'
+To add
 ```
 
 Usage
