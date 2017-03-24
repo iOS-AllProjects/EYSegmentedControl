@@ -7,6 +7,7 @@ Fully customisable, comes in two styles radius and flat!
 Demo
 ----
 <a href="https://imgflip.com/gif/1lyqkg"><img src="https://i.imgflip.com/1lyqkg.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/1m0zyp"><img src="https://i.imgflip.com/1m0zyp.gif" title="made at imgflip.com"/></a>
 
 Install
 -------
@@ -71,4 +72,4 @@ Selected Label Border Color.
   segmented.addTarget(self, action: #selector(ViewController.segmentedViewControllerValueChanged(_:)), for: .valueChanged)
 ```
 
-And that'ss it! 
+And that's it! 
