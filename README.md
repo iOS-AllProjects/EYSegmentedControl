@@ -43,6 +43,7 @@ Bottom Border.
 ##### For all Labels
 Unselected Labels Color.
 Highlighted Label Color.
+Font Size.
 
 ##### For the Highlighted Label
 Radius Style.
