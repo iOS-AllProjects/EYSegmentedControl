@@ -2,7 +2,7 @@ EYSegmentedControl
 ==================
 
 Custom segmented control written in swift 3.  
-Fully customisable.  
+Fully customisable, comes in two styles radius and flat! 
 
 Demo
 ----
@@ -37,12 +37,15 @@ Drag a `UIView` into your storyboard! Change the class to `CustomSegmentedContro
 ##### For the UIView
 Background Color. 
 Corner Radius.
+Bottom Border. 
 
 ##### For all Labels
 Unselected Labels Color.
 Highlighted Label Color.
 
 ##### For the Highlighted Label
+Radius Style.
+Flat Style.
 Selected Label Background Color.
 Selected Label Border Width.
 Selected Label Border Color. 
@@ -68,14 +71,4 @@ Selected Label Border Color.
   segmented.addTarget(self, action: #selector(ViewController.segmentedViewControllerValueChanged(_:)), for: .valueChanged)
 ```
 
-And that is it.
-
-``` swift
- to add
-```
-
-To add: 
-
-``` swift
-//to add
-```
+And that'ss it! 
