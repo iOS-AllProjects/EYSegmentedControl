@@ -14,11 +14,15 @@ import UIKit
     
     private var labels = [UILabel]()
     
-    var selectedLabelView = UIView()
+    private var selectedLabelView = UIView()
+    private var bottomBorderLayer = CALayer()
+    
+
+
     // Edit/add/remove labels
     var items : [String] = ["Item1", "Item2"] { didSet { setupLabels() } }
     
-    var selectedIndex : Int = 0 { didSet { displayNewSelectedIndex() }}
+    var selectedIndex : Int = 0 { didSet { displaySelectedLabel() }}
     
     // Mark: Editable Properties
     
@@ -35,6 +39,19 @@ import UIKit
         }
     }
     
+    @IBInspectable var bottomBorderEnabled: Bool = true {
+        didSet {
+            bottomBorderLayer.removeFromSuperlayer()
+            if bottomBorderEnabled {
+                // Edit height property
+                bottomBorderLayer.frame = CGRect(x: 0, y: layer.bounds.height - 1, width: bounds.width, height: 0.5)
+                // Edit bottome border color
+                bottomBorderLayer.backgroundColor = UIColor.white.cgColor
+                layer.addSublayer(bottomBorderLayer)
+            }
+        }
+    }
+    
     @IBInspectable var highlightedLabelColor : UIColor = UIColor.white {
         didSet {
                 labels[0].textColor = highlightedLabelColor
@@ -45,6 +62,31 @@ import UIKit
         didSet {
             for label in labels{
                 label.textColor = unSelectedLabelColor  
+            }
+        }
+    }
+    
+    @IBInspectable var radiusStyle: Bool = false {
+        didSet{
+            if radiusStyle{
+                selectedLabelView.frame = CGRect (
+                    x: self.bounds.origin.x,
+                    y: self.bounds.origin.y,
+                    width: self.bounds.width / CGFloat(items.count),
+                    height: self.bounds.height)
+                selectedLabelView.layer.cornerRadius = selectedLabelView.frame.height / 2
+            }
+        }
+    }
+    
+    @IBInspectable var flatStyle: Bool = false {
+        didSet{
+            if flatStyle{
+                selectedLabelView.frame = CGRect (
+                    x: self.bounds.origin.x,
+                    y: self.bounds.maxY - 4,
+                    width: self.bounds.width / CGFloat(items.count),
+                    height: 5.0)
             }
         }
     }
@@ -68,6 +110,7 @@ import UIKit
         }
     
     }
+    
 
     // MARK: - Initializer
     
@@ -84,24 +127,18 @@ import UIKit
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        // Selected Frame width based on the number of items
-        var selectedFrame = self.bounds
-        let newWidth = selectedFrame.width / CGFloat(items.count)
-        selectedFrame.size.width = newWidth
-        
-        // Selected View
-        selectedLabelView.frame = selectedFrame
-        selectedLabelView.layer.cornerRadius = selectedLabelView.frame.height / 2
-        
-        // Label
+        // Label height is based on the view bounds
         let labelHeight = self.bounds.height
+        // Label width is divided by the number of labels
         let labelWidth = self.bounds.width / CGFloat(labels.count)
         
+        // xPosition starts from 0 as we used the bounds meaning the view's own coordinate system
         for index in 0...labels.count - 1 {
             let label = labels[index]
             let xPosition = CGFloat(index) * labelWidth
             label.frame = CGRect(x: xPosition, y: 0, width: labelWidth, height: labelHeight)
         }
+        
     }
     
     // MARK: - Setup
@@ -128,12 +165,17 @@ import UIKit
         }
     }
     
-    func displayNewSelectedIndex(){
+    func displaySelectedLabel(){
         // Get the right label
         let label = labels[selectedIndex]
         // Animate transition
         UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: [], animations: {
-            self.selectedLabelView.frame = label.frame
+            if self.radiusStyle {
+                self.selectedLabelView.frame = label.frame
+            }
+            if self.flatStyle{
+                self.selectedLabelView.frame.origin.x = label.frame.origin.x
+            }
         }, completion: nil)
     }
     
