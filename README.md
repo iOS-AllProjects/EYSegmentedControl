@@ -12,14 +12,44 @@ Demo
 Install
 -------
 
+##### Requirements
+
+- iOS 10.0+
+- Swift 3.0+
+
 ##### Manual
 
 Copy & paste `CustomSegmentedControl.swift` in your project
 
-##### CocoaPods
+##### CocoaPods 
 
-``` ruby
-To add
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```
+$ gem install cocoapods
+```
+
+To integrate EYSegmentedControl into your Xcode project using CocoaPods, specify it in your ```Podfile```:
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/iOS-AllProjects/EYSegmentedControl.git'
+
+platform :ios, '10.0'
+use_frameworks!
+
+target '<Your Target Project Name>' do
+pod 'EYSegmentedControl', '0.1.0'
+end
+
+```
+<b>Or</b>
+
+```
+source 'https://github.com/iOS-AllProjects/EYSegmentedControl.git'
+
+platform :ios, '10.0'
+use_frameworks!
 ```
 
 Usage
