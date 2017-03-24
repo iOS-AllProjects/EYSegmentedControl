@@ -20,7 +20,7 @@ import UIKit
 
 
     // Edit/add/remove labels
-    var items : [String] = ["Item1", "Item2"] { didSet { setupLabels() } }
+    var items : [String] = ["Item 1", "Item 2"] { didSet { setupLabels() } }
     
     var selectedIndex : Int = 0 { didSet { displaySelectedLabel() }}
     
@@ -62,6 +62,14 @@ import UIKit
         didSet {
             for label in labels{
                 label.textColor = unSelectedLabelColor  
+            }
+        }
+    }
+    
+    @IBInspectable var fontSize: CGFloat = 1.0 {
+        didSet {
+            for label in labels{
+                label.font = UIFont (name: "Helvetica Neue", size: fontSize)
             }
         }
     }

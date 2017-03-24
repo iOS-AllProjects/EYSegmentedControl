@@ -47,6 +47,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="radiusStyle" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="flatStyle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
